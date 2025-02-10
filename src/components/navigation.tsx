@@ -9,7 +9,7 @@ export function Navigation() {
                     <Link
                         key={link.title}
                         href={link.href}
-                        className="relative hover:text-[#f0f0f0] transition-colors duration-500 group"
+                        className="relative hover:text-[#f0f0f0] transition-colors duration-500 group text-sm"
                     >
                         {link.title}
                         <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-[#f0f0f0] transition-all duration-500 group-hover:w-full" />
