@@ -5,7 +5,7 @@ import { contactLinks, footerLinks } from "~/lib/data"
 export function Footer() {
     return (
         <>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto px-6 py-8">
                 <section aria-labelledby="craft-heading">
                     <h2 id="craft-heading" className="text-sm font-medium text-muted-foreground mb-4">
                         CRAFT

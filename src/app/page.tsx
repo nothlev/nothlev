@@ -3,7 +3,7 @@ import { Navigation } from "~/components/navigation";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen flex flex-col w-full max-w-4xl border-2 border-[#101010] mx-auto">
+    <div className="min-h-screen flex flex-col w-full max-w-6xl border-2 border-[#101010] mx-auto">
       <header className="py-6 px-8 flex justify-end">
         <Navigation />
       </header>
