@@ -3,6 +3,11 @@
  * for Docker builds.
  */
 /** @type {import("next").NextConfig} */
-const config = {};
+const config = {
+    images: {
+        domains: ['placehold.co'],
+        dangerouslyAllowSVG: true,
+    }
+};
 
 export default config;
