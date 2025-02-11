@@ -4,7 +4,7 @@ export const navLinks = [
     { href: "/cv", title: "CV" },
 ];
 
-export const footerLinks = [
+export const projectLinks = [
     { title: "Project 1" },
     { title: "Project 2" },
     { title: "Project 3" },

@@ -1,6 +1,6 @@
 import { Sun, Moon, ArrowUpRight } from "lucide-react"
 import Link from "next/link"
-import { contactLinks, footerLinks } from "~/lib/data"
+import { contactLinks, projectLinks } from "~/lib/data"
 
 export function Footer() {
     return (
@@ -12,10 +12,15 @@ export function Footer() {
                     </h2>
                     <nav aria-label="Craft navigation">
                         <ul className="space-y-3">
-                            {footerLinks.map((link) => (
+                            {projectLinks.map((link) => (
                                 <li key={link.title}>
-                                    <Link href="#" className="text-sm hover:underline">
+                                    <Link
+                                        href="#"
+                                        className="relative hover:text-[#f0f0f0] transition-colors duration-500 group text-sm"
+                                        aria-label="View project details"
+                                    >
                                         {link.title}
+                                        <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-[#f0f0f0] transition-all duration-500 group-hover:w-full" />
                                     </Link>
                                 </li>
                             ))}
@@ -33,10 +38,11 @@ export function Footer() {
                                 <li key={link.title}>
                                     <Link
                                         href={link.href}
-                                        className="text-sm hover:underline inline-flex items-center"
+                                        className="text-sm inline-flex items-center relative hover:text-[#f0f0f0] transition-colors duration-500 group"
                                         aria-label={`Visit ${link.title} profile (opens in new tab)`}
                                     >
                                         {link.title}
+                                        <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-[#f0f0f0] transition-all duration-500 group-hover:w-full" />
                                         <ArrowUpRight className="ml-1 h-3 w-3" aria-hidden="true" />
                                     </Link>
                                 </li>
