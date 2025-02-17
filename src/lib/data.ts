@@ -1,17 +1,5 @@
-export const navLinks = [
-    { href: "/", title: "Craft" },
-    { href: "/about", title: "About" },
-    { href: "/cv", title: "CV" },
-];
-
-export const projectLinks = [
-    { title: "Project 1" },
-    { title: "Project 2" },
-    { title: "Project 3" },
-];
-
-export const contactLinks = [
-    { title: "LinkedIn", href: "https://www.linkedin.com/in/mikkelnothlev/" },
-    { title: "Github", href: "https://www.github.com/nothlev" },
-    { title: "Mail", href: "mikkelelvers@outlook.com" },
+export const socials = [
+    { name: "github", url: "https://www.github.com/nothlev/" },
+    { name: "linkedin", url: "https://www.linkedin.com/in/mikkelnothlev/" },
+    { name: "email", url: "mailto:mikkelelvers@outlook.com" },
 ];

@@ -1,17 +1,13 @@
-import { Footer } from "~/components/footer";
-import { Navigation } from "~/components/navigation";
+"use client";
 
-export default function HomePage() {
+import { Footer } from "@/components/footer";
+
+export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col w-full max-w-6xl border-2 border-[#101010] mx-auto">
-      <header className="py-6 px-8 flex justify-end">
-        <Navigation />
-      </header>
-      <main className="border-t-2 border-[#101010] py-2 px-8 flex items-center justify-center">
-      </main>
-      <footer className="mt-auto border-t-2 border-[#101010] w-full py-12 px-6" role="contentinfo">
+    <main className="min-h-screen grid grid-cols-3 grid-rows-[1fr_auto] justify-items-stretch px-4 sm:px-8 select-none">
+      <div className="col-span-3 row-start-2 py-4 sm:py-8">
         <Footer />
-      </footer>
-    </div>
+      </div>
+    </main>
   );
 }

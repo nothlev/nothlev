@@ -1,7 +1,11 @@
-import "~/styles/globals.css";
+import "@/styles/globals.css";
 
-import { GeistSans } from "geist/font/sans";
+import { Merriweather } from "next/font/google";
 import { type Metadata } from "next";
+
+export const font = Merriweather({
+  weight: ["400", "700"],
+})
 
 export const metadata: Metadata = {
   title: "Mikkel Nothlev",
@@ -13,7 +17,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable}`}>
+    <html lang="en" className={`${font.className}`}>
       <body>{children}</body>
     </html>
   );
